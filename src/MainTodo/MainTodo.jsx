@@ -61,7 +61,7 @@ const MainTodo = () => {
         <button onClick={() => setFilter('medium')} className="mr-2 px-4 py-2 bg-yellow-500 text-gray-900 rounded">Medium</button>
         <button onClick={() => setFilter('high')} className="mr-2 px-4 py-2 bg-red-500 text-white rounded">High</button>
         <button onClick={() => setFilter('incomplete')} className="mr-2 px-4 py-2 bg-gray-500 text-white rounded">Incomplete</button>
-        <button onClick={() => setFilter('complete')} className="px-4 py-2 bg-black-500 text-white rounded">Complete</button>
+        <button onClick={() => setFilter('complete')} className="px-4 py-2 bg-black text-white rounded">Complete</button>
       </div>
       <TaskForm onSubmit={addTask} />
       <TaskList
