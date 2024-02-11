@@ -1,4 +1,4 @@
-// components/App.js
+
 import React, { useState } from 'react';
 import TaskForm from '../components/TaskForm/TaskForm';
 import TaskList from '../components/TaskList/TaskList';
@@ -6,7 +6,7 @@ import TaskList from '../components/TaskList/TaskList';
 
 const MainTodo = () => {
   const [tasks, setTasks] = useState([]);
-  const [filter, setFilter] = useState('all'); // 'all', 'low', 'medium', 'high'
+  const [filter, setFilter] = useState('all'); 
 
   const addTask = (newTask) => {
     setTasks([...tasks, { id: Date.now(), ...newTask, completed: false }]);
